@@ -1,0 +1,30 @@
+@import '../../_variables.scss';
+.servers {
+    width:100%;
+    &--header{
+        color: $color-text-primary-accent;
+        border-bottom: 1px solid;
+        font-weight:bold;
+        font-size: 0.857rem;
+        
+        th{
+            padding: 0.857rem 0 0.857rem 1rem;
+            text-align: left;
+        }
+    }
+    &--row{
+        border-bottom:1px solid $color-tertiary;
+    }
+    &--cell{
+        padding: 0.857rem 0 0.857rem 1rem;
+        &_bold{
+            font-weight:bold;
+        }
+        &_wide{
+            width: 30%;
+        }
+        &_narrow{
+            width: 5%;
+        }
+    }
+}

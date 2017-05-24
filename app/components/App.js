@@ -1,6 +1,6 @@
 var React = require('react');
 var Header = require('./Header/Header');
-var Servers = require('./Servers');
+var Servers = require('./Servers/Servers');
 import './content.scss';
 
 class App extends React.Component {
