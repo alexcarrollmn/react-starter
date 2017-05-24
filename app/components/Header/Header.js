@@ -1,4 +1,5 @@
 var React = require('react');
+var Stats = require("./Stats");
 import './header.scss';
 
 class Header extends React.Component {
@@ -6,9 +7,10 @@ class Header extends React.Component {
         return(
             <div className="header">
                 navigation
+                <Stats/>
             </div>
         )
     }
 }
 
-module.exports = Nav;
+module.exports = Header;

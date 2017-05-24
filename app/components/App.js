@@ -1,12 +1,14 @@
 var React = require('react');
-var Header = require('./Nav');
+var Header = require('./Header/Header');
+
+var Servers = require('./Servers');
 
 class App extends React.Component {
     render() {
         return(
             <div className='container'>
                 <Header />
-                Hello there dolly
+                <Servers />
             </div>
         )
     }
