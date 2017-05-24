@@ -1,11 +1,11 @@
 var React = require('react');
-var Nav = require('./Nav');
+var Header = require('./Nav');
 
 class App extends React.Component {
     render() {
         return(
             <div className='container'>
-                <Nav />
+                <Header />
                 Hello there dolly
             </div>
         )
