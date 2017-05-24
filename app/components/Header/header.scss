@@ -1,6 +1,36 @@
 @import '../../_variables.scss';
 .header {
     color: $color-text-secondary-accent;
-    height:12.8rem;
     background: $color-secondary-accent;
+    &--wrapper{
+        max-width:$content-width;
+        margin:0 auto;
+    }
+    &--bar{
+        background: $color-primary-accent;
+        h1{
+            max-width: $content-width;
+            margin:0 auto;
+            font-size: 1.142rem;
+            padding:0.5rem 0;
+            font-weight: bold;
+        }
+    }
+    &--control{
+        padding: 2rem 0;
+        display:flex;
+        align-items: left;
+        justify-content: space-between;
+        &_section {
+            p{
+                font-size: 0.857rem;
+                
+            }
+            p.header--control_data{
+                font-size: 2.857rem;
+                font-weight: 200;
+            }
+        }
+        
+    }
 }

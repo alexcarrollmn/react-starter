@@ -1,14 +1,18 @@
 var React = require('react');
 var Header = require('./Header/Header');
-
 var Servers = require('./Servers');
+import './content.scss';
 
 class App extends React.Component {
     render() {
         return(
             <div className='container'>
                 <Header />
-                <Servers />
+                <div className="content--wrapper">
+                    <div className="content">
+                        <Servers />
+                    </div>
+                </div>
             </div>
         )
     }

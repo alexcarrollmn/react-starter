@@ -1,0 +1,9 @@
+@import '../_variables.scss';
+.content{
+
+    padding: 0 $content-side-padding;
+    &--wrapper{
+        margin:0 auto;
+        max-width: $content-width;
+    }
+}

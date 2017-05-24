@@ -1,3 +1,15 @@
+@import '../../_variables.scss';
 .stats {
     background: rgba(255,255,255,0.13);
+    padding: 1rem $content-side-padding;
+    display:flex;
+    justify-content: space-between;
+    &--section{
+        &_header{
+            font-size:0.857rem;
+        }
+        &_status{
+            font-size:1.428rem;
+        }
+    }
 }
