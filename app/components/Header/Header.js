@@ -1,7 +1,6 @@
-var React = require('react');
-var Stats = require("./Stats");
-var HeaderControl = require("./HeaderControl");
-import './header.scss';
+import React from 'react';
+import {Stats} from "./Stats";
+import {HeaderControl} from "./HeaderControl";
 
 class Header extends React.Component {
     render() {

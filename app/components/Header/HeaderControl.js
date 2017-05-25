@@ -1,5 +1,4 @@
-var React = require('react');
-import './header.scss';
+import React from 'react';
 
 class HeaderControl extends React.Component {
     render() {

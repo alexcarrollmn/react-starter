@@ -1,5 +1,4 @@
-var React = require('react');
-import './servers.scss';
+import React from 'react';
 
 class Servers extends React.Component {
 

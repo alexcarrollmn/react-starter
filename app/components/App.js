@@ -1,9 +1,7 @@
-var React = require('react');
-var Header = require('./Header/Header');
-var Servers = require('./Servers/Servers');
+import React from 'react';
+import { Header } from './Header/Header';
+import { Servers } from './Servers/Servers';
 import {Button, Checkbox, NumberInput, Radio, RadioGroup, SVGIcon, TextInput, Textarea, ToggleSwitch, Tooltip} from '@ba-ui-toolkit/ba-ui-toolkit';
-
-import './content.scss';
 
 class App extends React.Component {
 	render() {

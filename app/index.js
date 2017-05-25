@@ -1,12 +1,10 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var PropTypes = require('prop-types');
-var ReactRouter = require('react-router-dom');
-var Router = ReactRouter.BrowserRouter;
-var Route = ReactRouter.Route;
-var Switch = ReactRouter.Switch;
-var App = require('./components/App');
-import './index.scss';
+import React from 'react';
+import {ReactDom} from 'react-dom';
+import {PropTypes} from 'prop-types';
+import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
+
+import {App} from './components/App';
+
 
 
 ReactDOM.render(
