@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Stats from "./Stats";
 import HeaderControl from "./HeaderControl";
 
+import './header.scss';
+
 class Header extends Component {
     render() {
         return(

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './servers.scss';
 class Servers extends Component {
 
     render() {

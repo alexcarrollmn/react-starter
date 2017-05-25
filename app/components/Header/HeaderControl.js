@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './header.scss';
 class HeaderControl extends React.Component {
     render() {
         return(
