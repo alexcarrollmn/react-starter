@@ -41,4 +41,4 @@ class Servers extends React.Component {
     }
 }
 
-module.exports = Servers;
+export default Servers;

@@ -34,4 +34,4 @@ class HeaderControl extends React.Component {
     }
 }
 
-module.exports = HeaderControl;
+export default HeaderControl;

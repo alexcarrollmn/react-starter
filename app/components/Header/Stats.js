@@ -1,4 +1,4 @@
-var React = require('react');
+import React from 'react';
 
 
 class Stats extends React.Component {
@@ -35,4 +35,4 @@ class Stats extends React.Component {
     }
 }
 
-module.exports = Stats;
+export default Stats;
