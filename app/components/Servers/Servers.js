@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class Servers extends React.Component {
+class Servers extends Component {
 
     render() {
         return(

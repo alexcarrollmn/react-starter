@@ -1,8 +1,8 @@
-import React from 'react';
-import {Stats} from "./Stats";
-import {HeaderControl} from "./HeaderControl";
+import React, {Component} from 'react';
+import Stats from "./Stats";
+import HeaderControl from "./HeaderControl";
 
-class Header extends React.Component {
+class Header extends Component {
     render() {
         return(
             <div className="header">
