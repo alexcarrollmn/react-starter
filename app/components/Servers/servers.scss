@@ -1,22 +1,22 @@
-@import '../../_variables.scss';
+@import "~@ba-ui-toolkit/essentials/_essentials.scss";
 .servers {
     width:100%;
     &--header{
-        color: $color-text-primary-accent;
+        color: $gray5;
         border-bottom: 1px solid;
-        font-weight:bold;
-        font-size: 0.857rem;
+        font-family: $font-family-bold;
+        font-size: $body-size-s;
         
         th{
-            padding: 0.857rem 0 0.857rem 1rem;
+            padding: $space-xs 0 $space-xs $space-s;
             text-align: left;
         }
     }
     &--row{
-        border-bottom:1px solid $color-tertiary;
+        border-bottom:1px solid $gray2;
     }
     &--cell{
-        padding: 0.857rem 0 0.857rem 1rem;
+        padding: $space-xs 0 $space-xs $space-s;
         &_bold{
             font-weight:bold;
         }

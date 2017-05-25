@@ -1,16 +1,16 @@
-@import '../../_variables.scss';
+@import "~@ba-ui-toolkit/essentials/_essentials.scss";
 .stats {
     background: rgba(255,255,255,0.13);
-    padding: 1rem $content-side-padding;
+    padding: 1rem $space-s;
     display:flex;
     justify-content: space-between;
     &--section{
         &_header{
-            font-size:0.857rem;
-            margin-bottom:0.5rem;
+            font-size:$body-size-s;
+            margin-bottom:$space-xs;
         }
         &_status{
-            font-size:1.428rem;
+            font-size:$heading-size-s;
         }
     }
 }

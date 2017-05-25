@@ -1,17 +1,17 @@
-@import '../../_variables.scss';
+@import "~@ba-ui-toolkit/essentials/_essentials.scss";
 .header {
-    color: $color-text-secondary-accent;
-    background: $color-secondary-accent;
+    color: $white;
+    background: $primary1;
     &--wrapper{
-        max-width:$content-width;
+        max-width:1280px;
         margin:0 auto;
     }
     &--bar{
-        background: $color-primary-accent;
+        background: $primary3;
         h1{
-            max-width: $content-width;
+            max-width: 1280px;
             margin:0 auto;
-            font-size: 1.142rem;
+            font-size: $heading-size-s;
             padding:0.5rem 0;
             font-weight: bold;
         }
