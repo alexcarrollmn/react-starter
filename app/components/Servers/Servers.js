@@ -1,7 +1,6 @@
-var React = require('react');
+import React, {Component} from 'react';
 import './servers.scss';
-
-class Servers extends React.Component {
+class Servers extends Component {
 
     render() {
         return(
@@ -42,4 +41,4 @@ class Servers extends React.Component {
     }
 }
 
-module.exports = Servers;
+export default Servers;

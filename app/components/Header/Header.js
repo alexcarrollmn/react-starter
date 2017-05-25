@@ -1,9 +1,10 @@
-var React = require('react');
-var Stats = require("./Stats");
-var HeaderControl = require("./HeaderControl");
+import React, {Component} from 'react';
+import Stats from "./Stats";
+import HeaderControl from "./HeaderControl";
+
 import './header.scss';
 
-class Header extends React.Component {
+class Header extends Component {
     render() {
         return(
             <div className="header">
@@ -19,4 +20,4 @@ class Header extends React.Component {
     }
 }
 
-module.exports = Header;
+export default Header;

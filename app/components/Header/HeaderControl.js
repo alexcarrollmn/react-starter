@@ -1,6 +1,5 @@
-var React = require('react');
+import React from 'react';
 import './header.scss';
-
 class HeaderControl extends React.Component {
     render() {
         return(
@@ -35,4 +34,4 @@ class HeaderControl extends React.Component {
     }
 }
 
-module.exports = HeaderControl;
+export default HeaderControl;
