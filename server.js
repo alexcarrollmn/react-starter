@@ -6,8 +6,10 @@ var config = require('./webpack.config.js');
 var path = require('path');
 var express = require('express');
 var request = require('request');
+var chalk = require('chalk');
 var router = express.Router();
 var compiler = webpack(config);
+
 var server = new WebpackDevServer(compiler, {
 	hot: true,
 	filename: config.output.filename,
@@ -28,9 +30,9 @@ app.all('/api/:path', function (req, res) {
 app.use(router);
 
 app.listen(3000,  function(){
-  console.log("api proxy listening on 3000");
+  console.log(chalk.yellow.bgBlue("api proxy listening on ") + chalk.red.bgBlue.bold("http://localhost:3000") + "\n");
 });
 
 server.listen(8080, 'localhost', function() {
-  console.log("webapp listening on 8080");
+  console.log(chalk.yellow.bgBlue("webapp listening on ") + chalk.red.bgBlue.bold("http://localhost:8080") + "\n");
 });
