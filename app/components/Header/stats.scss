@@ -1,7 +1,7 @@
 @import "~@ba-ui-toolkit/essentials/_essentials.scss";
 .stats {
     background: rgba(255,255,255,0.13);
-    padding: 1rem $space-s;
+    padding: $space-s;
     display:flex;
     justify-content: space-between;
     &--section{

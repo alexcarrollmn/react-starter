@@ -12,23 +12,23 @@
             max-width: 1280px;
             margin:0 auto;
             font-size: $heading-size-s;
-            padding:0.5rem 0;
+            padding:$space-xs 0;
             font-weight: bold;
         }
     }
     &--control{
-        padding: 2rem 0;
+        padding: $space-l 0;
         display:flex;
         align-items: left;
         justify-content: space-between;
         &_section {
             p{
-                font-size: 0.857rem;
-                margin-bottom:0.5rem;
+                font-size: $body-size-s;
+                margin-bottom:$space-xs;
                 
             }
             p.header--control_data{
-                font-size: 2.857rem;
+                font-size: $heading-size-l;
                 font-weight: 200;
             }
         }
