@@ -1,0 +1,44 @@
+{
+  "status": {
+    "routing": {
+      "gateways": [
+        {
+          "name": "Gateway_1",
+          "status": "Active"
+        }
+      ],
+      "router_count": 1,
+      "requests": {
+        "instant": 23,
+        "today": 2343,
+        "yesterday": 4431,
+        "this_month": 2334234,
+        "last_month": 234234,
+        "this_year": 654645465,
+        "all_time": 8474564744
+      },
+      "total_instant_cpu": 0
+    },
+    "cluster_costs": {
+      "instant": 0,
+      "today": 30.12,
+      "yesterday": 40.12,
+      "this_month": 900,
+      "last_month": 1000,
+      "this_year": 12000,
+      "all_time": 42000
+    },
+    "name": "string",
+    "servers": {
+      "active": [
+        "Active_1", "Active_2"
+      ],
+      "idle": [
+        "Idle_1", "Idle_2"
+      ],
+      "failed": [
+        "Failed_1", "Failed_2"
+      ]
+    }
+  }
+}

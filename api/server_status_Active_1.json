@@ -1,0 +1,75 @@
+{
+  "status": "string",
+  "server_status": {
+    "state": "active",
+    "configuration": {
+      "mem_limit": 0,
+      "mem_minimum": 0,
+      "dedicated": false,
+      "cpu_limit": 0,
+      "ttl": 3600,
+      "max_reloads": 1,
+      "encryption_key": "string",
+      "auto_lock": false,
+      "server_security": {
+        "mode": 1,
+        "client_cam_uri": "string",
+        "server_cam_uri": "string"
+      }
+    },
+    "max_mem_use": {
+      "instant": 0,
+      "today": 0,
+      "yesterday": 0,
+      "this_month": 0,
+      "last_month": 0,
+      "this_year": 0,
+      "all_time": 0
+    },
+    "cpu_time_use": {
+      "instant": 0,
+      "today": 0,
+      "yesterday": 0,
+      "this_month": 0,
+      "last_month": 0,
+      "this_year": 0,
+      "all_time": 0
+    },
+    "direct_cost": {
+      "instant": 0,
+      "today": 0,
+      "yesterday": 0,
+      "this_month": 0,
+      "last_month": 0,
+      "this_year": 0,
+      "all_time": 0
+    },
+    "requests": {
+      "instant": 0,
+      "today": 0,
+      "yesterday": 0,
+      "this_month": 0,
+      "last_month": 0,
+      "this_year": 0,
+      "all_time": 0
+    },
+    "max_load_time": {
+      "instant": 0,
+      "today": 0,
+      "yesterday": 0,
+      "this_month": 0,
+      "last_month": 0,
+      "this_year": 0,
+      "all_time": 0
+    },
+    "max_unload_time": {
+      "instant": 0,
+      "today": 0,
+      "yesterday": 0,
+      "this_month": 0,
+      "last_month": 0,
+      "this_year": 0,
+      "all_time": 0
+    }
+  }
+}
