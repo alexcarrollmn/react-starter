@@ -1,9 +1,10 @@
 import axios from 'axios';
 
 
-export function fetchAllServers(status){
-        return axios.get('/api/status/' + status).then(function(response){
-            console.log("api.js servers", response.data);
+export function fetchAllServers(){
+    console.log("fetching?")
+        return axios.get('/api/status').then(function(response){
+            console.log("api.js all servers", response.data);
             return response.data;
         })
 }

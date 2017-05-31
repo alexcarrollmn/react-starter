@@ -24,7 +24,11 @@ function SelectedStatus(props){
 
 function ServersTable(props){
     {console.log("props",props);}
-    
+    var rows=[];
+    props.servers.servers.forEach(function(server, index){
+        rows.push(<ServerRow server={server} key={server.name} />)
+        console.log(rows)
+    })
     return(
         <table className="servers">
             <thead>
@@ -37,27 +41,7 @@ function ServersTable(props){
                 </tr>
             </thead>
             <tbody>
-                {props.servers.status.servers.active.map(function(server, index){
-                    return (
-                        <tr key={server} className="servers--row">
-                            <td className="servers--cell servers--cell_bold servers--cell_wide">
-                            {server}
-                            </td>
-                            <td className="servers--cell">
-                                20% of 80GB
-                            </td>
-                            <td className="servers--cell">
-                                5%
-                            </td>
-                            <td className="servers--cell">
-                                1 day
-                            </td>
-                            <td className="servers--cell servers--cell_bold servers--cell_narrow">
-                                $12300
-                            </td>
-                        </tr>
-                    )
-                })}
+                {rows}
                 
             </tbody>
 
@@ -65,6 +49,30 @@ function ServersTable(props){
 
         </table>
 
+    )
+}
+
+function ServerRow(props){
+    console.log("server row",props);
+    let mem_use = Math.floor((props.server.info.server_status.max_mem_use.instant / props.server.info.server_status.configuration.mem_limit) * 100);
+    return (
+        <tr className="servers--row">
+            <td className="servers--cell servers--cell_bold servers--cell_wide">
+            {props.server.name} 
+            </td>
+            <td className="servers--cell">
+                {mem_use}% of {Math.floor(props.server.info.server_status.configuration.mem_limit/1024)} GB
+            </td>
+            <td className="servers--cell">
+                5%
+            </td>
+            <td className="servers--cell">
+                1 day
+            </td>
+            <td className="servers--cell servers--cell_bold servers--cell_narrow">
+                $12300
+            </td>
+        </tr>
     )
 }
 
@@ -87,7 +95,7 @@ class Servers extends Component {
             }
         });
 
-        fetchAllServers(status).then(function(servers){
+        fetchAllServers().then(function(servers){
             console.log("fetchAllServers", servers)
             this.setState(function(){
                 return {servers: servers}

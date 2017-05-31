@@ -3,7 +3,7 @@
   "server_status": {
     "state": "active",
     "configuration": {
-      "mem_limit": 16384,
+      "mem_limit": 0,
       "mem_minimum": 0,
       "dedicated": false,
       "cpu_limit": 0,
@@ -18,7 +18,7 @@
       }
     },
     "max_mem_use": {
-      "instant": 1750,
+      "instant": 0,
       "today": 0,
       "yesterday": 0,
       "this_month": 0,
@@ -27,7 +27,7 @@
       "all_time": 0
     },
     "cpu_time_use": {
-      "instant": 50,
+      "instant": 0,
       "today": 0,
       "yesterday": 0,
       "this_month": 0,
@@ -39,7 +39,7 @@
       "instant": 0,
       "today": 0,
       "yesterday": 0,
-      "this_month": 100.23,
+      "this_month": 0,
       "last_month": 0,
       "this_year": 0,
       "all_time": 0
