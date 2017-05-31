@@ -19,7 +19,8 @@ router.use('/status', function(req, res){
         servers.servers.push(server);
     }
     for (var i=0;i<servers.servers.length;i++){
-        servers.servers[i].info = require('./server_status_Active_1.json');
+        //console.log('./server_status_' + servers.servers[i].name + '.json');
+        servers.servers[i].info = require('./server_status_' + servers.servers[i].name + '.json');
     }
     res.json(servers);
 });

@@ -1,7 +1,7 @@
 {
   "status": "OK",
   "server_status": {
-    "state": "active",
+    "state": "failed",
     "configuration": {
       "mem_limit": 16384,
       "mem_minimum": 0,
