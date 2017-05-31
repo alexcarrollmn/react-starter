@@ -9,28 +9,28 @@ class SelectedStatus extends Component{
 	}
 	render(){
 		var statuses = ['all', 'active', 'idle', 'failed'];
-
+		console.log("this", this.props.servers.status.servers.idle.length);
 		return (
-			<ul className="status">
+			<ul className="servers--status">
 				{statuses.map(function(status){
-					if(status == 'all'){
-						return(
-							<li style={status === this.props.selectedStatus ? {color: '#f00'} : null}
-								onClick={this.props.onSelect.bind(null, status)}
-								key={status}>
-								{status} servers 
-							</li>
-						)
+					var activeClass = '' , failedClass = '';
+					if (this.props.selectedStatus === status){
+						activeClass = " servers--status_link-active"
 					}
-					else{
-						return(
-							<li style={status === this.props.selectedStatus ? {color: '#f00'} : null}
-								onClick={this.props.onSelect.bind(null, status)}
-								key={status}>
-								servers {status} 
-							</li>
-						)
+					if(status === 'failed'){
+						failedClass = " servers--status_link-failed"
 					}
+					return(
+						<li className={"servers--status_link" + activeClass + failedClass}
+							onClick={this.props.onSelect.bind(null, status)}
+							key={status}>
+							{status=='active' ? this.props.servers.status.servers.active.length + ' ': ''}
+							{status=='idle' ? this.props.servers.status.servers.idle.length + ' ': ''} 
+							{status=='failed' ? this.props.servers.status.servers.failed.length + ' ': ''}
+							{status} servers 
+							
+						</li>
+					)
 				}.bind(this))
 			}
 			</ul>
@@ -84,11 +84,14 @@ class ServerRow extends Component{
 		super();
 	}
 	render(){
-		console.log(this);
+		console.log("server row", this);
 		let mem_use = Math.floor((this.props.server.info.server_status.max_mem_use.instant / this.props.server.info.server_status.configuration.mem_limit) * 100);
-   
+		let failedClass = '';
+		if(this.props.server.info.server_status.state === 'failed'){
+			failedClass = ' servers--row_failed';
+		}
 		return (
-			<tr className="servers--row">
+			<tr className={"servers--row" + failedClass}>
 				<td className="servers--cell servers--cell_bold servers--cell_wide">
 				{this.props.server.name} 
 				</td>
@@ -140,11 +143,13 @@ class Servers extends Component {
 	}
 	render() {
 		return(
-			<div>
-				<SelectedStatus
+			
+				<div>
+				{!this.state.servers ? <p>loading</p> : <div><SelectedStatus
 					selectedStatus = {this.state.selectedStatus}
-					onSelect = {this.updateStatus} />
-				{!this.state.servers ? <p>loading</p> : <ServersTable servers={this.state.servers} status={this.state.selectedStatus} />}
+					onSelect = {this.updateStatus}
+					servers={this.state.servers} />
+					<ServersTable servers={this.state.servers} status={this.state.selectedStatus} /></div>}
 				
 			</div>
 		)
