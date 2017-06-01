@@ -30,8 +30,14 @@
             width: 5%;
         }
     }
+    &--search{
+        float:right;
+    }
     &--status{
         display:flex;
+        width:75%;
+        float:left;
+        
         &_link{
             margin: 0 $space-l 0 0;
             &-active{
