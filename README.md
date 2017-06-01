@@ -20,4 +20,4 @@
 ## notes
 1. Currently the server is listening on two different ports for requests. `/api` will forward to `:3000` while all other requests go to `:8080`. This will probably cause problems when it comes time to deploy.
 2. I do not have a good deployment script in place yet. This is a low priority for me right now.
-3. *Blocker:* The API is not complete yet. All data in here is static.
+3. **Blocker:** The API is not complete yet. All data in here is static.
