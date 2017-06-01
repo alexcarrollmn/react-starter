@@ -16,6 +16,7 @@
 ## running the server
 1. `npm install`
 2. `npm start`
+3. [http://localhost:8080](http://localhost:8080)
 
 ## notes
 1. Currently the server is listening on two different ports for requests. `/api` will forward to `:3000` while all other requests go to `:8080`. This will probably cause problems when it comes time to deploy.
