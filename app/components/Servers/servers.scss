@@ -37,7 +37,9 @@
         display:flex;
         width:75%;
         float:left;
-        
+        &:hover{
+            cursor: pointer;
+        }
         &_link{
             margin: 0 $space-l 0 0;
             &-active{

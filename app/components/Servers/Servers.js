@@ -48,6 +48,7 @@ class Search extends Component {
 	render(){
 		return(
 			<TextInput 
+				
 				className="servers--search"
 				placeholder="search"
 				defaultValue={this.state.value}
@@ -57,6 +58,7 @@ class Search extends Component {
 					}
 				}
 			/>
+			
 		)
 	}
 }
@@ -173,7 +175,7 @@ class Servers extends Component {
 	render() {
 		return(
 			
-				<div>
+				<div className="ba-theme-default">
 				{!this.state.servers ? <p>loading</p> : 
 					<div>
 						<SelectedStatus
