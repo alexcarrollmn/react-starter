@@ -37,6 +37,8 @@
             &-active{
                 border-bottom: 3px solid $primary1;
                 color: $primary1;
+                font-family: $font-family-bold;
+                font-weight: $fw-bold;
                 
             }
             &-failed{

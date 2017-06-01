@@ -1,6 +1,4 @@
 var WebpackDevServer = require('webpack-dev-server');
-var webpackDevMiddleware = require ('webpack-dev-middleware');
-var webpackHotMiddleware = require('webpack-hot-middleware');
 var webpack = require('webpack');
 var config = require('./webpack.config.js');
 var path = require('path');

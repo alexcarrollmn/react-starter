@@ -56,7 +56,6 @@ class ServersTable extends Component{
 			}
 			console.log(this.state)
 			console.log("server", server);
-			//rows.push(<ServerRow server={server} key={server.name} />)
 		}.bind(this))
 		return(
 			<table className="servers">
