@@ -8,10 +8,9 @@
     1. `npm install @watsonanalytics/anything-just-trying-to-get-an-auth-url`
     2. visit the url provided to authenticate
 3. I recommend running NVM in order to manage node versions. Currently I am developing using v8.0.0
-    1. If you do not have homebrew installed, do this: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` 
-    2. `brew install nvm`
-    3. `nvm install 8`
-    4. `nvm use 8`
+    1. [Install nvm](https://github.com/creationix/nvm)
+    2. `nvm install 8`
+    3. `nvm use 8`
 
 
 ## running the server
