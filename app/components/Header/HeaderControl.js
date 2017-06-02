@@ -1,6 +1,12 @@
 import React from 'react';
 import './header.scss';
+
+
 class HeaderControl extends React.Component {
+    constructor(props){
+        super();
+    }
+
     render() {
         return(
             <div className="header--control">
@@ -18,15 +24,15 @@ class HeaderControl extends React.Component {
                     </p>
                 </div>
                 <div className="header--control_section">
-                    <p>Last 30 days</p>
+                    <p>Last month</p>
                     <p className="header--control_data">
-                        $17,525
+                        ${this.props.stats.status.cluster_costs.last_month.toLocaleString('en')}
                     </p>
                 </div>
                 <div className="header--control_section">
-                    <p>Last 7 days</p>
+                    <p>This month</p>
                     <p className="header--control_data">
-                        $2,858
+                        ${this.props.stats.status.cluster_costs.this_month.toLocaleString('en')}
                     </p>
                 </div>
             </div>

@@ -7,17 +7,17 @@
           "status": "Active"
         }
       ],
-      "router_count": 1,
+      "router_count": 2,
       "requests": {
-        "instant": 23,
-        "today": 2343,
+        "instant": 2322,
+        "today": 213212,
         "yesterday": 4431,
         "this_month": 2334234,
         "last_month": 234234,
         "this_year": 654645465,
         "all_time": 8474564744
       },
-      "total_instant_cpu": 0
+      "total_instant_cpu": 9
     },
     "cluster_costs": {
       "instant": 0,

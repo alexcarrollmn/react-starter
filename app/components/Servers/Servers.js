@@ -130,7 +130,7 @@ class ServerRow extends Component{
 					1 day
 				</td>
 				<td className="servers--cell servers--cell_bold servers--cell_narrow">
-					${this.props.server.info.server_status.direct_cost.this_month}
+					${this.props.server.info.server_status.direct_cost.this_month.toLocaleString('en')}
 				</td>
 			</tr>
 		)
