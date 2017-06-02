@@ -32,6 +32,7 @@
     }
     &--search{
         float:right;
+        margin:$space-s 0;
     }
     &--status{
         display:flex;
@@ -41,7 +42,7 @@
             cursor: pointer;
         }
         &_link{
-            margin: 0 $space-l 0 0;
+            margin: $space-m $space-l $space-m 0;
             &-active{
                 border-bottom: 3px solid $primary1;
                 color: $primary1;
